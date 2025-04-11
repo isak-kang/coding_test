@@ -1,28 +1,44 @@
-grade_dict = {
-    "A+": 4.5,
-    "A0": 4.0,
-    "B+": 3.5,
-    "B0": 3.0,
-    "C+": 2.5,
-    "C0": 2.0,
-    "D+": 1.5,
-    "D0": 1.0,
-    "F": 0.0
-}
+n = 20
+total = 0
 
-total_score = 0.0
-total_credit = 0.0
+for i in range(20):
+    major = input().split()
+    # score = int(major[1]) * int(major[2])
+    # print(score)
 
-for _ in range(20):
-    subject, credit, grade = input().split()
-    credit = float(credit)
+    if major[2] == "A+" :
+        score += int(major[1]) * 4.5
+        score2 += int(major[1])
+    if major[2] == "A0" :
+        score2 += int(major[1])
+        score += int(major[1]) * 4.0
+    if major[2] == "B+" :
+        score2 += int(major[1])
+        score += int(major[1]) * 3.5
+    if major[2] == "B0" :
+        score2 += int(major[1])
+        score += int(major[1]) * 3.0
+    if major[2] == "C+" :
+        score2 += int(major[1])
+        score += int(major[1]) * 2.5
+    if major[2] == "C0" :
+        score2 += int(major[1])
+        score += int(major[1]) * 2.0
+    if major[2] == "D+" :
+        score2 += int(major[1])
+        score += int(major[1]) * 1.5
+    if major[2] == "D0" :
+        score2 += int(major[1])
+        score += int(major[1]) * 1.0
+    if major[2] == "F" :
+        score2 += int(major[1])
+        score += int(major[1]) * 0
+    if major[2] == "P" :
+        pass
 
-    if grade == "P":
-        continue  # 학점 총합에 포함되지 않음
+total = score / score2
 
-    total_score += credit * grade_dict[grade]
-    total_credit += credit
+print(total)
 
-gpa = total_score / total_credit
 
-print(gpa)
+    

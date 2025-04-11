@@ -4,3 +4,5 @@ while 1 :
         print(a)
     except :
         break
+
+

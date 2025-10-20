@@ -9,7 +9,7 @@ def solution(n):
     for _ in range(3, n + 1):
         a, b = b, (a + b) 
     
-    return b % 1234567
+    return b
 
 # memo = {1 : 1, 2: 1}
 
@@ -24,6 +24,6 @@ def solution(n):
 
 
 
-# n = 30
+n = 10
 
-# print(solution(n))
+print(solution(n))

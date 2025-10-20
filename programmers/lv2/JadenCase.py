@@ -17,7 +17,7 @@ def solution(s):
     for char in s:
         if char == " ":
             answer += char
-            capitalize_next = True 
+            capitalize_next = True
         else:
             if capitalize_next:
                 answer += char.upper()

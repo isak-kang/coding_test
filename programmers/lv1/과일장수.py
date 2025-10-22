@@ -2,6 +2,8 @@ def solution(k, m, score):
     score.sort(reverse = True)
 
     answer = score[m] * m
+    print(answer,score[m],score)
+
         
     return answer
 

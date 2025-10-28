@@ -1,0 +1,11 @@
+def solution(s):
+    if len(s) % 2 == 1:
+        print(s[len(s)//2])
+        return s[len(s)//2]
+    else :
+        return s[(len(s)//2)-1] + s[(len(s)//2)]
+
+
+s = "qwer"
+
+print(solution(s))

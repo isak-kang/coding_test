@@ -1,0 +1,6 @@
+
+
+print(solution(10))
+
+
+
